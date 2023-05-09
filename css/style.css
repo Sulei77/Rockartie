@@ -1,0 +1,641 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;800&display=swap"); 
+
+/*--------------------RESET---------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif !important;
+    list-style: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+}
+
+/*--------------------HEADER---------------------*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #f4f4f4;
+}
+
+header img {
+    margin: 0px 8px 0px 8px;
+}
+
+header nav div ul {
+    display: flex;
+}
+.navbar-nav {
+    text-align: center;
+}
+
+header nav div ul li {
+    margin: 24px 8px 24px 8px;
+    font-size: 16px;
+}
+
+header nav ul a {
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand img{
+    width: 100%;
+}
+
+.nav-icons-derecha{
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item ul {
+padding: 24px 8px 24px 8px;
+}
+
+.dropdown-menu{
+    width: auto;
+    height: auto
+}
+.navLogin img {
+    width: 32px;
+    height: 32px;
+    margin: 24px 8px 24px 8px;
+}
+
+/*--------------------MAIN---------------------*/
+.hero {
+    background-image: url(../img/hero.png);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 30px;
+}
+
+.hero a {
+    font-size: 20px;
+    background-color: rgb(187, 62, 62);
+    color: white;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px;
+}
+
+.nuevosIngresos {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.nuevosIngresos h2 {
+    text-align: center;
+    padding-bottom: 24px;
+    color: black;
+    font-weight: bold;
+}
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "item1img item2img item3img item4img"
+    "item1t item2t item3t item4t"
+    "item1p item2p item3p item4p"
+    "item1a item2a item3a item4a"
+    ;
+    gap: 4px;
+}
+.item001{
+    border: 1px solid black;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.item001 img{
+    grid-area: item1img;
+}
+.item001 h3{
+    grid-area: item1t;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+.item001 p{
+    grid-area: item1p;
+}
+.item001 div{
+    padding-bottom: 8px;
+}
+.item001 div a{
+    grid-area: ite1a;
+    border-bottom: 10px;
+    font-size: 18px;
+    background-color: rgb(187, 62, 62);
+    color: white;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    display: inline-block;
+}
+.item002{
+    border: 1px solid black;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.item002 img{
+    grid-area: item2img;
+}
+.item002 h3{
+    grid-area: item2t;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+.item002 p{
+    grid-area: item2p;
+}
+.item002 div{
+    padding-bottom: 8px;
+}
+.item002 div a{
+    grid-area: ite2a;
+    border-bottom: 10px;
+    font-size: 18px;
+    background-color: rgb(187, 62, 62);
+    color: white;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    display: inline-block;
+}
+.item003{
+    border: 1px solid black;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.item003 img{
+    grid-area: item3img;
+}
+.item003 h3{
+    grid-area: item3t;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+.item003 p{
+    grid-area: item3p;
+}
+.item003 div{
+    padding-bottom: 8px;
+}
+.item003 div a{
+    grid-area: ite3a;
+    border-bottom: 10px;
+    font-size: 18px;
+    background-color: rgb(187, 62, 62);
+    color: white;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    display: inline-block;
+}
+.item004{
+    border: 1px solid black;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.item004 img{
+    grid-area: item4img;
+}
+.item004 h3{
+    grid-area: item4t;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.item004 p{
+    grid-area: item4p;
+}
+.item004 div{
+    padding-bottom: 8px;
+}
+.item004 div a{
+    grid-area: ite4a;
+    border-bottom: 10px;
+    font-size: 18px;
+    background-color: rgb(187, 62, 62);
+    color: white;
+    border-radius: 4px;
+    padding: 4px 16px 4px 16px;
+    display: inline-block;
+}
+
+/* .cards div{
+    width: 100%;
+    height: 100%;
+    border: 1px black solid;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+/* .nuevosIngresos div img {
+    width: 300px;
+    height: 450px;
+} */
+
+/* .nuevosIngresos div h3 {
+    margin: 5px;
+}
+
+.nuevosIngresos div div a {
+    background-color: rgb(187, 62, 62);
+    color: white;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px;
+}
+
+.nuevosIngresos div p {
+    margin: 10px;
+    padding-bottom: 16px;
+} */
+
+
+
+.cards div img{
+    width: 100%;
+}
+
+.estilos {
+    width: 100%;
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    /*display: flex;
+    justify-content:space-around;
+    padding-top: 80px;
+    padding-bottom: 80px;*/
+}
+
+.estilos div {
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.estilos div img {
+    width: 100%;
+    height: 100%;
+}
+
+.estilos div h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-weight: 800;
+    color: white;
+    font-size: 200%;
+    padding-bottom: 16px;
+}
+
+.beneficios h2 {
+    padding-top: 80px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.beneficiosContenedor {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    
+    "delivery creaditcard time refresh"
+    ;
+}
+
+.delivery{
+    grid-area: delivery;
+}
+
+.creditCard{
+    grid-area: creaditcard;
+}
+
+.time{
+    grid-area: time;
+}
+
+.refresh{
+    grid-area: refresh;
+}
+
+.delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.creditCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.refresh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery p{
+    padding-top: 10px;
+}
+.creditCard p{
+    padding-top: 10px;
+}
+.time p{
+    padding-top: 10px;
+}
+.refresh p{
+    padding-top: 10px;
+}
+
+.wpFixed {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+
+.cajitas-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.cajitas-contenedor .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.cajitas-contenedor .card img {
+    width: 100%;
+}
+
+.cajitas-contenedor .card a {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+
+
+/*--------------------FOOTER---------------------*/
+
+
+
+.footerSections {
+    background-color: #f4f4f4;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.footerSections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerSections ul {
+    padding-left: 0px;
+}
+
+.footerSections ul li {
+    padding-top: 8px;
+
+}
+
+.footerSections ul li a{
+    color: black;
+    font-size: 14px;
+}
+.footerSections h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+.redesIcons{
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+.redes img {
+    width: 32px;
+    height: 32px;
+    
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contacto {
+    background-color: grey;
+    color: white;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.form-campo {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.map-contenedor {
+    text-align: center;
+    margin: 10px;
+}
+
+/*! MEDIA QUERY */
+
+@media screen and (max-width:993px){
+    .hero h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .hero p {
+        font-size: 20px;
+    }
+    
+    .hero a {
+        font-size: 10px;
+        background-color: rgb(187, 62, 62);
+        color: white;
+        padding: 8px 16px 8px 16px;
+        border-radius: 4px;
+    }
+
+    .cajitas-contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "item1img item2img" 
+        "item3img item4img"
+        "item1t item2t" 
+        "item3t item4t"
+        "item1p item2p" 
+        "item3p item4p"
+        "item1a item2a" 
+        "item3a item4a"
+        ;
+        gap: 4px;
+    }
+
+    .estilos {
+        width: 100%;
+        margin-top: 70px;
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+    }
+
+    .beneficiosContenedor {
+        padding-top: 30px;
+        padding-bottom: 80px;
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+    
+        "delivery creaditcard" 
+        "time refresh"
+        ;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .hero h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .hero p {
+        font-size: 20px;
+    }
+    
+    .hero a {
+        font-size: 10px;
+        background-color: rgb(187, 62, 62);
+        color: white;
+        padding: 8px 16px 8px 16px;
+        border-radius: 4px;
+    }
+    
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+    }
+
+    .cajitas-contenedor {
+        grid-template-columns: 1fr;
+    }
+    
+    .estilos {
+        width: 100%;
+        margin-top: 70px;
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 16px;
+    }
+
+    .footerSections {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

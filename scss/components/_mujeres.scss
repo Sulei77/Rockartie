@@ -1,0 +1,27 @@
+main{
+    .cajitas-contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        .card{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            padding: 10px;
+            img{
+                width: 100%;
+            }
+            div{
+                a{
+                    background-color: black;
+                    color: white;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

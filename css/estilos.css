@@ -35,6 +35,66 @@ body header {
       body header .navbar div div .nav-icons-derecha a img {
         width: 100%; }
 
+main .cajitas-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px; }
+  main .cajitas-contenedor .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px; }
+    main .cajitas-contenedor .card img {
+      width: 100%; }
+    main .cajitas-contenedor .card div a {
+      background-color: black;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 5px; }
+
+main .cajitas-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px; }
+  main .cajitas-contenedor .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px; }
+    main .cajitas-contenedor .card img {
+      width: 100%; }
+    main .cajitas-contenedor .card div a {
+      background-color: black;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 5px; }
+
+main .cajitas-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px; }
+  main .cajitas-contenedor .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px; }
+    main .cajitas-contenedor .card img {
+      width: 100%; }
+    main .cajitas-contenedor .card div a {
+      background-color: black;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 5px; }
+
 .footerSections {
   background-color: #f4f4f4;
   padding-top: 56px;

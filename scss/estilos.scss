@@ -1,0 +1,11 @@
+@import "./scss/base/generales";
+@import "./scss/base/variables";
+@import "./scss/components/header";
+//aca van los partials de las paginas//
+@import"./scss/components/index";
+@import "./scss/components/mujeres";
+@import "./scss/components/hombres";
+@import "./scss/components/accesorios";
+@import "./scss/components/contacto";
+@import "./scss/components/footer";
+@import "./scss/base/mediaquerys";

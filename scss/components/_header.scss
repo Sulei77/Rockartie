@@ -1,0 +1,47 @@
+body{
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding-left: 24px;
+        padding-right: 24px;
+        background-color: #f4f4f4;
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            div{
+                a{
+                    img{
+                        width: 100%;
+                        margin: 0px 8px 0px 8px;
+                    }
+                }
+                div{
+                    .navbar-nav{
+                        text-align: center;
+                        display: flex;
+                        .nav-item{
+                            .tincho-dropdown-menu{
+                                padding: 24px 8px 24px 8px;
+                                width: auto;
+                                height: auto;
+                                li{
+                                    margin: 24px 8px 24px 8px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                    .nav-icons-derecha{
+                        display: flex;
+                        a{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

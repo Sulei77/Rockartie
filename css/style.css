@@ -38,11 +38,11 @@ header nav div ul li {
     font-size: 16px;
 }
 
-header nav ul a {
+/* header nav ul a {
     color: black;
     font-weight: 400;
     font-size: 16px;
-}
+} */
 
 .navbar{
     display: flex;
@@ -69,7 +69,7 @@ padding: 24px 8px 24px 8px;
 
 .dropdown-menu{
     width: auto;
-    height: auto
+    height: auto;
 }
 .navLogin img {
     width: 32px;

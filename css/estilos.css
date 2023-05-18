@@ -34,3 +34,27 @@ body header {
       display: flex; }
       body header .navbar div div .nav-icons-derecha a img {
         width: 100%; }
+
+.footerSections {
+  background-color: #f4f4f4;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .footerSections div h3 {
+    font-weight: bold;
+    font-size: 16px; }
+  .footerSections div ul {
+    padding-left: 0px; }
+    .footerSections div ul li {
+      padding-top: 8px; }
+      .footerSections div ul li a {
+        color: black;
+        font-size: 14px; }
+  .footerSections div .redesIcons {
+    color: black;
+    font-size: 14px; }
+    .footerSections div .redesIcons a img {
+      width: 32px;
+      height: 32px; }

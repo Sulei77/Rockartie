@@ -95,6 +95,24 @@ main .cajitas-contenedor {
       padding: 5px 15px;
       border-radius: 5px; }
 
+main .registro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .registro .form-contacto {
+    background-color: grey;
+    color: white;
+    padding: 50px;
+    border-radius: 15px; }
+    main .registro .form-contacto .form-campo {
+      text-align: center;
+      padding: 5px 0; }
+
+main .map-contenedor {
+  text-align: center;
+  margin: 10px; }
+
 .footerSections {
   background-color: #f4f4f4;
   padding-top: 56px;

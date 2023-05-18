@@ -1,0 +1,22 @@
+main{
+    .registro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .form-contacto{
+            background-color: grey;
+            color: white;
+            padding: 50px;
+            border-radius: 15px;
+            .form-campo{
+                text-align: center;
+                padding: 5px 0;
+            }
+        }
+    }
+    .map-contenedor{
+        text-align: center;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,235 @@
+main{
+    .hero{
+        background-image: url(../img/hero.png);
+        width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .heroContent{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-size: 30px;
+            }
+            h1{
+                font-size: 65px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            a{
+                font-size: 20px;
+                background-color: rgb(187, 62, 62);
+                color: white;
+                padding: 8px 16px 8px 16px;
+                border-radius: 4px;
+            }
+        }
+    }
+    .nuevosIngresos{
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: 100%;
+        padding-left: 15px;
+        h2{
+            text-align: center;
+            padding-bottom: 24px;
+            color: black;
+            font-weight: bold;
+        }
+        .cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            gap: 4px;
+            .item001{
+                border: 1px solid black;
+                padding-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding-top: 8px;
+                }
+                div{
+                    padding-bottom: 8px;
+                    a{
+                        border-bottom: 10px;
+                        font-size: 18px;
+                        background-color: rgb(187, 62, 62);
+                        color: white;
+                        border-radius: 4px;
+                        padding: 4px 16px 4px 16px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .item002{
+                border: 1px solid black;
+                padding-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding-top: 8px;
+                }
+                div{
+                    padding-bottom: 8px;
+                    a{
+                        border-bottom: 10px;
+                        font-size: 18px;
+                        background-color: rgb(187, 62, 62);
+                        color: white;
+                        border-radius: 4px;
+                        padding: 4px 16px 4px 16px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .item003{
+                border: 1px solid black;
+                padding-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding-top: 8px;
+                }
+                div{
+                    padding-bottom: 8px;
+                    a{
+                        border-bottom: 10px;
+                        font-size: 18px;
+                        background-color: rgb(187, 62, 62);
+                        color: white;
+                        border-radius: 4px;
+                        padding: 4px 16px 4px 16px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .item004{
+                border: 1px solid black;
+                padding-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                h3{
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding-top: 8px;
+                }
+                div{
+                    padding-bottom: 8px;
+                    a{
+                        border-bottom: 10px;
+                        font-size: 18px;
+                        background-color: rgb(187, 62, 62);
+                        color: white;
+                        border-radius: 4px;
+                        padding: 4px 16px 4px 16px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .estilos{
+        width: 100%;
+        margin-top: 70px;
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: repeat(3,1fr);
+        gap: 16px;
+        div{
+            height: 500px;
+            text-align: center;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            h3{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                font-weight: 800;
+                color: white;
+                font-size: 200%;
+                padding-bottom: 16px;
+            }
+        }
+    }
+    .beneficios{
+        .beneficiosh2{
+            h2{
+                padding-top: 80px;
+                color: black;
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+            }
+        }
+        .beneficiosContenedor{
+            padding-top: 30px;
+            padding-bottom: 80px;
+            display: grid;
+            grid-template-rows: 200px;
+            grid-template-columns: repeat(4,1fr);
+            .delivery{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    padding-top: 10px;
+                }
+            }
+            .creditCard{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    padding-top: 10px;
+                }
+            }
+            .time{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    padding-top: 10px;
+                }
+            }
+            .refresh{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -8,3 +8,11 @@
     text-decoration: none !important;
     box-sizing: border-box !important;
 }
+
+main{
+    .wpFixed{
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+    }
+}

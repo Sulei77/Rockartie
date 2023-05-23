@@ -12,24 +12,42 @@ main .wpFixed {
   right: 50px;
   bottom: 50px; }
 
+.hero, .hero .heroContent, .beneficios .beneficiosContenedor .delivery, .beneficios .beneficiosContenedor .creditCard, .beneficios .beneficiosContenedor .time, .beneficios .beneficiosContenedor .refresh, main .registro {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nuevosIngresos .cards .item001, .nuevosIngresos .cards .item002, .nuevosIngresos .cards .item003, .nuevosIngresos .cards .item004 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
 body header {
   position: sticky;
   top: 0;
   z-index: 1;
-  padding-left: 24px;
+  padding-top: 0px;
   padding-right: 24px;
+  padding-bottom: 0px;
+  padding-left: 24px;
   background-color: #f4f4f4; }
   body header .navbar {
     display: flex;
     flex-direction: column; }
     body header .navbar div a img {
       width: 100%;
-      margin: 0px 8px 0px 8px; }
+      margin: 0px 8px 0px 8px;
+      transition: 1s; }
+      body header .navbar div a img:hover {
+        transform: scale(1.05); }
     body header .navbar div div .navbar-nav {
       text-align: center;
       display: flex; }
       body header .navbar div div .navbar-nav .nav-item .tincho-dropdown-menu {
-        padding: 24px 8px 24px 8px;
+        padding-top: 24px;
+        padding-right: 8px;
+        padding-bottom: 24px;
+        padding-left: 8px;
         width: auto;
         height: auto; }
         body header .navbar div div .navbar-nav .nav-item .tincho-dropdown-menu li {
@@ -40,7 +58,7 @@ body header {
       body header .navbar div div .nav-icons-derecha a img {
         width: 100%; }
 
-main .hero {
+.hero {
   background-image: url(../img/hero.png);
   width: 100%;
   height: 600px;
@@ -48,193 +66,281 @@ main .hero {
   background-size: cover;
   background-position: center;
   color: white;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  main .hero .heroContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    main .hero .heroContent p {
+  background-attachment: fixed; }
+  .hero .heroContent {
+    flex-direction: column; }
+    .hero .heroContent p {
       font-size: 30px; }
-    main .hero .heroContent h1 {
+    .hero .heroContent h1 {
       font-size: 65px;
       margin-bottom: 20px;
       font-weight: bold; }
-    main .hero .heroContent a {
+    .hero .heroContent a {
       font-size: 20px;
       background-color: #bb3e3e;
       color: white;
-      padding: 8px 16px 8px 16px;
-      border-radius: 4px; }
+      padding-top: 8px;
+      padding-right: 16px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      border-radius: 4px;
+      transition: 1s; }
+      .hero .heroContent a:hover {
+        transform: scale(1.05); }
 
-main .nuevosIngresos {
-  padding-top: 80px;
-  padding-bottom: 80px;
+.nuevosIngresos {
   width: 100%;
+  padding-top: 80px;
+  padding-right: 15px;
+  padding-bottom: 80px;
   padding-left: 15px; }
-  main .nuevosIngresos h2 {
+  .nuevosIngresos h2 {
     text-align: center;
+    padding-top: 0px;
+    padding-right: 0px;
     padding-bottom: 24px;
+    padding-left: 0px;
     color: black;
     font-weight: bold; }
-  main .nuevosIngresos .cards {
+  .nuevosIngresos .cards {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto;
-    gap: 4px; }
-    main .nuevosIngresos .cards .item001 {
+    gap: 4px;
+    grid-template-areas: "item1img item2img item3img item4img" "item1t item2t item3t item4t" "item1p item2p item3p item4p" "item1a item2a item3a item4a"; }
+    .nuevosIngresos .cards .item001 {
       border: 1px solid black;
+      padding-top: 0px;
+      padding-right: 0px;
       padding-bottom: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center; }
-      main .nuevosIngresos .cards .item001 h3 {
+      padding-left: 0px;
+      text-align: center;
+      transition: 1s; }
+      .nuevosIngresos .cards .item001:hover {
+        transform: scale(1.05); }
+      .nuevosIngresos .cards .item001 h3 {
         font-size: 18px;
         font-weight: bold;
-        padding-top: 8px; }
-      main .nuevosIngresos .cards .item001 div {
-        padding-bottom: 8px; }
-        main .nuevosIngresos .cards .item001 div a {
+        padding-top: 8px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px; }
+      .nuevosIngresos .cards .item001 div {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 8px;
+        padding-left: 0px; }
+        .nuevosIngresos .cards .item001 div a {
           border-bottom: 10px;
           font-size: 18px;
           background-color: #bb3e3e;
           color: white;
           border-radius: 4px;
-          padding: 4px 16px 4px 16px;
+          padding-top: 4px;
+          padding-right: 16px;
+          padding-bottom: 4px;
+          padding-left: 16px;
           display: inline-block; }
-    main .nuevosIngresos .cards .item002 {
+      .nuevosIngresos .cards .item001 img {
+        width: 100%; }
+    .nuevosIngresos .cards .item002 {
       border: 1px solid black;
+      padding-top: 0px;
+      padding-right: 0px;
       padding-bottom: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center; }
-      main .nuevosIngresos .cards .item002 h3 {
+      padding-left: 0px;
+      text-align: center;
+      transition: 1s; }
+      .nuevosIngresos .cards .item002:hover {
+        transform: scale(1.05); }
+      .nuevosIngresos .cards .item002 h3 {
         font-size: 18px;
         font-weight: bold;
-        padding-top: 8px; }
-      main .nuevosIngresos .cards .item002 div {
-        padding-bottom: 8px; }
-        main .nuevosIngresos .cards .item002 div a {
+        padding-top: 8px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px; }
+      .nuevosIngresos .cards .item002 div {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 8px;
+        padding-left: 0px; }
+        .nuevosIngresos .cards .item002 div a {
           border-bottom: 10px;
           font-size: 18px;
           background-color: #bb3e3e;
           color: white;
           border-radius: 4px;
-          padding: 4px 16px 4px 16px;
+          padding-top: 4px;
+          padding-right: 16px;
+          padding-bottom: 4px;
+          padding-left: 16px;
           display: inline-block; }
-    main .nuevosIngresos .cards .item003 {
+      .nuevosIngresos .cards .item002 img {
+        width: 100%; }
+    .nuevosIngresos .cards .item003 {
       border: 1px solid black;
+      padding-top: 0px;
+      padding-right: 0px;
       padding-bottom: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center; }
-      main .nuevosIngresos .cards .item003 h3 {
+      padding-left: 0px;
+      text-align: center;
+      transition: 1s; }
+      .nuevosIngresos .cards .item003:hover {
+        transform: scale(1.05); }
+      .nuevosIngresos .cards .item003 h3 {
         font-size: 18px;
         font-weight: bold;
-        padding-top: 8px; }
-      main .nuevosIngresos .cards .item003 div {
-        padding-bottom: 8px; }
-        main .nuevosIngresos .cards .item003 div a {
+        padding-top: 8px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px; }
+      .nuevosIngresos .cards .item003 div {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 8px;
+        padding-left: 0px; }
+        .nuevosIngresos .cards .item003 div a {
           border-bottom: 10px;
           font-size: 18px;
           background-color: #bb3e3e;
           color: white;
           border-radius: 4px;
-          padding: 4px 16px 4px 16px;
+          padding-top: 4px;
+          padding-right: 16px;
+          padding-bottom: 4px;
+          padding-left: 16px;
           display: inline-block; }
-    main .nuevosIngresos .cards .item004 {
+      .nuevosIngresos .cards .item003 img {
+        width: 100%; }
+    .nuevosIngresos .cards .item004 {
       border: 1px solid black;
+      padding-top: 0px;
+      padding-right: 0px;
       padding-bottom: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center; }
-      main .nuevosIngresos .cards .item004 h3 {
+      padding-left: 0px;
+      text-align: center;
+      transition: 1s; }
+      .nuevosIngresos .cards .item004:hover {
+        transform: scale(1.05); }
+      .nuevosIngresos .cards .item004 h3 {
         font-size: 18px;
         font-weight: bold;
-        padding-top: 8px; }
-      main .nuevosIngresos .cards .item004 div {
-        padding-bottom: 8px; }
-        main .nuevosIngresos .cards .item004 div a {
+        padding-top: 8px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px; }
+      .nuevosIngresos .cards .item004 div {
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 8px;
+        padding-left: 0px; }
+        .nuevosIngresos .cards .item004 div a {
           border-bottom: 10px;
           font-size: 18px;
           background-color: #bb3e3e;
           color: white;
           border-radius: 4px;
-          padding: 4px 16px 4px 16px;
+          padding-top: 4px;
+          padding-right: 16px;
+          padding-bottom: 4px;
+          padding-left: 16px;
           display: inline-block; }
+      .nuevosIngresos .cards .item004 img {
+        width: 100%; }
 
-main .estilos {
+.estilos {
   width: 100%;
   margin-top: 70px;
   display: grid;
   grid-template-rows: 500px;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px; }
-  main .estilos div {
+  gap: 16px;
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px; }
+  .estilos div {
     height: 500px;
     text-align: center;
-    position: relative; }
-    main .estilos div img {
+    position: relative;
+    transition: 1s; }
+    .estilos div:hover {
+      transform: scale(1.05); }
+    .estilos div img {
       width: 100%;
       height: 100%; }
-    main .estilos div h3 {
+    .estilos div h3 {
       position: absolute;
       bottom: 0;
       width: 100%;
       font-weight: 800;
       color: white;
       font-size: 200%;
-      padding-bottom: 16px; }
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 16px;
+      padding-left: 0px; }
 
-main .beneficios .beneficiosh2 h2 {
+.beneficios .beneficiosh2 h2 {
   padding-top: 80px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
   color: black;
   display: flex;
   justify-content: center;
   font-weight: bold; }
 
-main .beneficios .beneficiosContenedor {
+.beneficios .beneficiosContenedor {
   padding-top: 30px;
+  padding-right: 0px;
   padding-bottom: 80px;
+  padding-left: 0px;
   display: grid;
   grid-template-rows: 200px;
   grid-template-columns: repeat(4, 1fr); }
-  main .beneficios .beneficiosContenedor .delivery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .beneficios .beneficiosContenedor .delivery {
+    transition: 1s;
     flex-direction: column; }
-    main .beneficios .beneficiosContenedor .delivery p {
-      padding-top: 10px; }
-  main .beneficios .beneficiosContenedor .creditCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .beneficios .beneficiosContenedor .delivery:hover {
+      transform: scale(1.05); }
+    .beneficios .beneficiosContenedor .delivery p {
+      padding-top: 10px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px; }
+  .beneficios .beneficiosContenedor .creditCard {
+    transition: 1s;
     flex-direction: column; }
-    main .beneficios .beneficiosContenedor .creditCard p {
-      padding-top: 10px; }
-  main .beneficios .beneficiosContenedor .time {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .beneficios .beneficiosContenedor .creditCard:hover {
+      transform: scale(1.05); }
+    .beneficios .beneficiosContenedor .creditCard p {
+      padding-top: 10px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px; }
+  .beneficios .beneficiosContenedor .time {
+    transition: 1s;
     flex-direction: column; }
-    main .beneficios .beneficiosContenedor .time p {
-      padding-top: 10px; }
-  main .beneficios .beneficiosContenedor .refresh {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .beneficios .beneficiosContenedor .time:hover {
+      transform: scale(1.05); }
+    .beneficios .beneficiosContenedor .time p {
+      padding-top: 10px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px; }
+  .beneficios .beneficiosContenedor .refresh {
+    transition: 1s;
     flex-direction: column; }
-    main .beneficios .beneficiosContenedor .refresh p {
-      padding-top: 10px; }
+    .beneficios .beneficiosContenedor .refresh:hover {
+      transform: scale(1.05); }
+    .beneficios .beneficiosContenedor .refresh p {
+      padding-top: 10px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px; }
 
 main .cajitas-contenedor {
   display: grid;
@@ -247,13 +353,19 @@ main .cajitas-contenedor {
     display: flex;
     align-items: center;
     border: 1px solid black;
-    padding: 10px; }
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; }
     main .cajitas-contenedor .card img {
       width: 100%; }
     main .cajitas-contenedor .card div a {
       background-color: black;
       color: white;
-      padding: 5px 15px;
+      padding-top: 5px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
       border-radius: 5px; }
 
 main .cajitas-contenedor {
@@ -267,13 +379,22 @@ main .cajitas-contenedor {
     display: flex;
     align-items: center;
     border: 1px solid black;
-    padding: 10px; }
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    transition: 1s; }
+    main .cajitas-contenedor .card:hover {
+      transform: scale(1.05); }
     main .cajitas-contenedor .card img {
       width: 100%; }
     main .cajitas-contenedor .card div a {
       background-color: black;
       color: white;
-      padding: 5px 15px;
+      padding-top: 5px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
       border-radius: 5px; }
 
 main .cajitas-contenedor {
@@ -287,28 +408,43 @@ main .cajitas-contenedor {
     display: flex;
     align-items: center;
     border: 1px solid black;
-    padding: 10px; }
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    transition: 1s; }
+    main .cajitas-contenedor .card:hover {
+      transform: scale(1.05); }
     main .cajitas-contenedor .card img {
       width: 100%; }
     main .cajitas-contenedor .card div a {
       background-color: black;
       color: white;
-      padding: 5px 15px;
+      padding-top: 5px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      padding-left: 15px;
       border-radius: 5px; }
 
 main .registro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
   main .registro .form-contacto {
     background-color: grey;
     color: white;
-    padding: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
     border-radius: 15px; }
     main .registro .form-contacto .form-campo {
       text-align: center;
-      padding: 5px 0; }
+      padding-top: 5px;
+      padding-right: 0px;
+      padding-bottom: 5px;
+      padding-left: 0px;
+      transition: 1s; }
+      main .registro .form-contacto .form-campo:hover {
+        transform: scale(1.05); }
 
 main .map-contenedor {
   text-align: center;
@@ -317,7 +453,9 @@ main .map-contenedor {
 .footerSections {
   background-color: #f4f4f4;
   padding-top: 56px;
+  padding-right: 0px;
   padding-bottom: 56px;
+  padding-left: 0px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
@@ -325,9 +463,15 @@ main .map-contenedor {
     font-weight: bold;
     font-size: 16px; }
   .footerSections div ul {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
     padding-left: 0px; }
     .footerSections div ul li {
-      padding-top: 8px; }
+      padding-top: 8px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px; }
       .footerSections div ul li a {
         color: black;
         font-size: 14px; }
@@ -337,3 +481,78 @@ main .map-contenedor {
     .footerSections div .redesIcons a img {
       width: 32px;
       height: 32px; }
+
+@media screen and (max-width: 993px) {
+  .hero .heroContent p {
+    font-size: 20px; }
+  .hero .heroContent h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold; }
+  .hero .heroContent a {
+    font-size: 10px;
+    background-color: #bb3e3e;
+    color: white;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px; }
+  .nuevosIngresos .cards {
+    width: 100%;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "item1img item2img"  "item3img item4img" "item1t item2t"  "item3t item4t" "item1p item2p"  "item3p item4p" "item1a item2a"  "item3a item4a"; }
+  .estilos {
+    width: 100%;
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; }
+  .beneficios .beneficiosContenedor {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "delivery creaditcard"  "time refresh"; }
+  .cajitas-contenedor {
+    grid-template-columns: 1fr 1fr; } }
+
+@media screen and (max-width: 670px) {
+  .hero .heroContent p {
+    font-size: 20px; }
+  .hero .heroContent h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold; }
+  .hero .heroContent a {
+    font-size: 10px;
+    background-color: #bb3e3e;
+    color: white;
+    padding: 8px 16px 8px 16px;
+    border-radius: 4px; }
+  .nuevosIngresos .cards {
+    grid-template-columns: 1fr;
+    grid-template-areas: none; }
+  .estilos {
+    width: 100%;
+    margin-top: 70px;
+    display: grid;
+    grid-template-rows: 500px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px; }
+  .beneficios .beneficiosContenedor {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "delivery creaditcard"  "time refresh"; }
+  .cajitas-contenedor {
+    grid-template-columns: 1fr; }
+  .footerSections {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center; } }

@@ -9,16 +9,16 @@ main{
             gap: 15px;
             display: flex;
             align-items: center;
-            border: 1px solid black;
-            padding: 10px;
+            border: 1px solid $color-secundario;
+            @include padding (10px, 10px, 10px, 10px);
             img{
                 width: 100%;
             }
             div{
                 a{
-                    background-color: black;
-                    color: white;
-                    padding: 5px 15px;
+                    background-color: $color-secundario;
+                    color: $color-principal;
+                    @include padding (5px, 15px, 5px, 15px);
                     border-radius: 5px;
                 }
             }

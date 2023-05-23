@@ -1,7 +1,6 @@
 .footerSections{
-    background-color: #f4f4f4;
-    padding-top: 56px;
-    padding-bottom: 56px;
+    background-color: $color-backgroundp;
+    @include padding (56px, 0px, 56px, 0px);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -11,17 +10,17 @@
             font-size: 16px;
         }
         ul{
-            padding-left: 0px;
+            @include padding (0px, 0px, 0px, 0px);
             li{
-                padding-top: 8px;
+                @include padding (8px, 0px, 0px, 0px);
                 a{
-                    color: black;
+                    color: $color-secundario;
                     font-size: 14px;
                 }
             }
         }
         .redesIcons{
-            color: black;
+            color: $color-secundario;
             font-size: 14px;
             a{
                 img{

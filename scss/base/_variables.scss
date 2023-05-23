@@ -1,0 +1,33 @@
+//variables
+$color-principal: white;
+$color-secundario: black;
+$color-terciario: rgb(187, 62, 62);
+$color-backgroundp: #f4f4f4;
+// Listas
+$font-size:
+10px,
+16px,
+14px,
+18px,
+20px,
+30px,
+40px,
+65px;
+// Extend
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+//mixin
+@mixin padding ($top, $right, $bottom, $left){
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}

@@ -1,5 +1,121 @@
-
-
-
-
-
+@media screen and (max-width:993px){
+    .hero{
+        .heroContent{
+            p{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 40px;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            a{
+                font-size: 10px;
+                background-color: rgb(187, 62, 62);
+                color: white;
+                padding: 8px 16px 8px 16px;
+                border-radius: 4px;
+            }
+        }
+    }
+    .nuevosIngresos{
+        .cards{
+            width: 100%;
+            display: grid;
+            gap: 4px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+            "item1img item2img" 
+            "item3img item4img"
+            "item1t item2t" 
+            "item3t item4t"
+            "item1p item2p" 
+            "item3p item4p"
+            "item1a item2a" 
+            "item3a item4a"
+            ;
+        }
+    }
+    .estilos {
+        width: 100%;
+        margin-top: 70px;
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 16px;
+    }
+    .beneficios{
+        .beneficiosContenedor{
+            padding-top: 30px;
+            padding-bottom: 80px;
+            display: grid;
+            grid-template-rows: 200px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: 
+            "delivery creaditcard" 
+            "time refresh"
+            ;
+        }
+    }
+    .cajitas-contenedor {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 670px){
+    .hero{
+        .heroContent{
+            p{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 30px;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+            a{
+                font-size: 10px;
+                background-color: rgb(187, 62, 62);
+                color: white;
+                padding: 8px 16px 8px 16px;
+                border-radius: 4px;
+            }
+        }
+    }
+    .nuevosIngresos{
+        .cards{
+            grid-template-columns: 1fr;
+            grid-template-areas: none;
+        }
+    }
+    .estilos {
+        width: 100%;
+        margin-top: 70px;
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: repeat(1,1fr);
+        gap: 16px;
+    }
+    .beneficios{
+        .beneficiosContenedor{
+            padding-top: 30px;
+            padding-bottom: 80px;
+            display: grid;
+            grid-template-rows: 200px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: 
+            "delivery creaditcard" 
+            "time refresh"
+            ;
+        }
+    }
+    .cajitas-contenedor {
+        grid-template-columns: 1fr;
+    }
+    .footerSections {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

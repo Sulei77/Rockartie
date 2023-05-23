@@ -3,9 +3,8 @@ body{
         position: sticky;
         top: 0;
         z-index: 1;
-        padding-left: 24px;
-        padding-right: 24px;
-        background-color: #f4f4f4;
+        @include padding (0px, 24px, 0px, 24px);
+        background-color: $color-backgroundp;
         .navbar{
             display: flex;
             flex-direction: column;
@@ -14,6 +13,10 @@ body{
                     img{
                         width: 100%;
                         margin: 0px 8px 0px 8px;
+                        transition: 1s;
+                        &:hover{
+                            transform: scale(1.05);
+                        }
                     }
                 }
                 div{
@@ -22,7 +25,7 @@ body{
                         display: flex;
                         .nav-item{
                             .tincho-dropdown-menu{
-                                padding: 24px 8px 24px 8px;
+                                @include padding (24px, 8px, 24px, 8px);
                                 width: auto;
                                 height: auto;
                                 li{

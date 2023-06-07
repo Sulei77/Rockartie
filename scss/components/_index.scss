@@ -27,7 +27,7 @@
             border-radius: 4px;
             transition: 1s;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
         }
     }
@@ -46,7 +46,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto;
-        gap: 4px;
+        gap: 6px;
         grid-template-areas:
             "item1img item2img item3img item4img"
             "item1t item2t item3t item4t"
@@ -59,8 +59,9 @@
             @extend %column;
             text-align: center;
             transition: 1s;
+            border-radius: 15px;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
             h3 {
                 font-size: 18px;
@@ -81,6 +82,8 @@
             }
             img {
                 width: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
             }
         }
         .item002 {
@@ -89,8 +92,9 @@
             @extend %column;
             text-align: center;
             transition: 1s;
+            border-radius: 15px;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
             h3 {
                 font-size: 18px;
@@ -111,6 +115,8 @@
             }
             img {
                 width: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
             }
         }
         .item003 {
@@ -119,8 +125,9 @@
             @extend %column;
             text-align: center;
             transition: 1s;
+            border-radius: 15px;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
             h3 {
                 font-size: 18px;
@@ -141,6 +148,8 @@
             }
             img {
                 width: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
             }
         }
         .item004 {
@@ -149,8 +158,9 @@
             @extend %column;
             text-align: center;
             transition: 1s;
+            border-radius: 15px;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
             h3 {
                 font-size: 18px;
@@ -171,13 +181,24 @@
             }
             img {
                 width: 100%;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
             }
         }
     }
 }
+.estilos-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-weight: bold;
+        color: black;
+    }
+}
 .estilos {
     width: 100%;
-    margin-top: 70px;
+    margin-top: 24px;
     display: grid;
     grid-template-rows: 500px;
     grid-template-columns: repeat(3, 1fr);
@@ -189,7 +210,7 @@
         position: relative;
         transition: 1s;
         &:hover{
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
         img {
             width: 100%;
@@ -225,7 +246,7 @@
             @extend %flex;
             transition: 1s;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
             flex-direction: column;
             p {
@@ -236,7 +257,7 @@
             @extend %flex;
             transition: 1s;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
             flex-direction: column;
             p {
@@ -247,7 +268,7 @@
             @extend %flex;
             transition: 1s;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
             flex-direction: column;
             p {
@@ -258,7 +279,7 @@
             @extend %flex;
             transition: 1s;
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.02);
             }
             flex-direction: column;
             p {

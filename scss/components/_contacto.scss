@@ -2,23 +2,72 @@ main{
     .registro{
         @extend %flex;
         flex-direction: column;
+        .registrate{
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
         .form-contacto{
             background-color: grey;
             color: $color-principal;
-            @include padding (50px, 50px, 50px, 50px);
+            @include padding (70px, 70px, 70px, 70px);
             border-radius: 15px;
             .form-campo{
-                text-align: center;
+                display: flex;
+                justify-content: space-around;
                 @include padding (5px, 0px, 5px, 0px);
                 transition: 1s;
                 &:hover{
                     transform: scale(1.05);
                 }
             }
+            .rock-form-nombre{
+                display: flex;
+                justify-content: end;
+                align-items: end;
+                gap: 30px;
+            }
+            .rock-form-campo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                h3{
+                    font-size: 16px;
+                }
+            }
+            .rock-form-genero{
+                justify-content: end;
+                gap: 14px;
+                h3{
+                    font-size: 16px;
+                }
+                .rock-form-label{
+                    font-size: 12px;
+                }
+                label{
+                    padding-left: 17px;
+                }
+            }
+            .rock-form-buttons{
+                padding-top: 15px;
+                input{
+                    background-color: $color-terciario !important;
+                    color: $color-principal !important;
+                    @include padding (5px, 15px, 5px, 15px);
+                    border-radius: 5px;
+                }
+                
+            }
         }
     }
     .map-contenedor{
         text-align: center;
         margin: 10px;
+        margin-top: 50px;
+        iframe{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
     }
 }

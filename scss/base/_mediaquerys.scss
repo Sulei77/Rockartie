@@ -1,4 +1,4 @@
-@media screen and (max-width:993px){
+@media screen and (max-width:768px){
     .hero{
         .heroContent{
             p{
@@ -22,7 +22,7 @@
         .cards{
             width: 100%;
             display: grid;
-            gap: 4px;
+            gap: 6px;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             grid-template-areas:
@@ -39,7 +39,7 @@
     }
     .estilos {
         width: 100%;
-        margin-top: 70px;
+        margin-top: 24px;
         display: grid;
         grid-template-rows: 500px;
         grid-template-columns: repeat(2,1fr);
@@ -58,18 +58,35 @@
             ;
         }
     }
-    .cajitas-contenedor {
-        grid-template-columns: 1fr 1fr;
+    main{
+        .hombreTitulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cajitas-contenedor {
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+            .card{
+                margin-left: 2.5px;
+                margin-right: 2.5px;
+                margin-top: 2.5px;
+                margin-bottom: 2.5px;
+            }
+        }
+        .wpFixed{
+            display: none;
+        }
     }
 }
-@media screen and (max-width: 670px){
+@media screen and (max-width: 375px){
     .hero{
         .heroContent{
             p{
                 font-size: 20px;
             }
             h1{
-                font-size: 30px;
+                font-size: 25px;
                 margin-bottom: 10px;
                 font-weight: bold;
             }
@@ -86,11 +103,43 @@
         .cards{
             grid-template-columns: 1fr;
             grid-template-areas: none;
+            .item001{
+                margin-bottom: 2.5px;
+                margin-top: 2.5px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+            .item002{
+                margin-bottom: 2.5px;
+                margin-top: 2.5px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+            .item003{
+                margin-bottom: 2.5px;
+                margin-top: 2.5px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+            .item004{
+                margin-bottom: 2.5px;
+                margin-top: 2.5px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
         }
     }
     .estilos {
         width: 100%;
-        margin-top: 70px;
+        margin-top: 24px;
         display: grid;
         grid-template-rows: 500px;
         grid-template-columns: repeat(1,1fr);
@@ -98,15 +147,23 @@
     }
     .beneficios{
         .beneficiosContenedor{
-            padding-top: 30px;
-            padding-bottom: 80px;
+            padding-top: 15px;
+            padding-bottom: 30px;
             display: grid;
-            grid-template-rows: 200px;
+            grid-template-rows: auto;
             grid-template-columns: repeat(2,1fr);
             grid-template-areas: 
             "delivery creaditcard" 
             "time refresh"
             ;
+            div{
+                img{
+                    width: 30px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
         }
     }
     .cajitas-contenedor {
@@ -118,4 +175,57 @@
         gap: 15px;
         text-align: center;
     }
+    main{
+        .hombreTitulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cajitas-contenedor {
+            grid-template-columns: 1fr;
+            .card{
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+        .wpFixed{
+            display: none;
+        }
+        .registro{
+            .registrate{
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            .form-contacto{
+                width: 100%;
+                @include padding (20px, 45px, 45px, 45px);
+                .rock-form-nombre{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0;
+                }
+                .rock-form-genero{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .rock-form-label{
+                        label{
+                            padding: 5px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .map-contenedor{
+            text-align: center;
+            margin: 10px;
+            margin-top: 50px;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+    
 }
